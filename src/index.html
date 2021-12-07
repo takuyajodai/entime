@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>web_secretary</title>
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/sp.css" rel="stylesheet" media="screen and (max-width:600px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+      #about {
+        background-color: #EDF2F7;
+      }
+
+      #about a {
+        color: #222222; 
+        font-weight: 700;
+      }
+
+      #about a:hover{
+        border-bottom: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>  
+        <div class="logo">
+          <a href="index.html"><img src="../images/logo.png" alt="entime" width=150px></a>
+        </div>
+        <nav>
+          <ul class="global-nav"> 
+            <li id="about"><a href="index.html">About</a></li>
+            <li id="enter-task"><a href="enter_task.php">Enter Task</a></li>
+            <li id="schedule"><a href="your_schedule.php">Your Schedule</a></li>
+          </ul>
+        </nav>
+      </header>
+  
+      <div id="wrap">
+        <div class="content">
+          <div class="main">
+            <div class="content-top>">
+              <h1>entimeの使い方 👀</h1>
+              <p>entimeはweb上で個人のタスクのタイムマネジメントを行うサイトです．</p>
+            </div>
+            <section class="description clearfix">
+              <h2>使い方</h2>
+              <p>まずは，自分の一日に割ける時間を設定します．<br>タスクの設定では，タスクの名前とそのタスクを終わらせるのにかかる時間の見積もりと締め切りを設定します．すると自動的に空いた時間にスケジュールを組んでくれるので，あとはタスクをこなすだけです．また，見積もりに対して時間が不足している場合は残り何時間必要であるかも教えてくれます．</p>
+              <h2>スケジューリングの仕組み</h2>
+              <p>スケジューリングは，一日に稼働できる時間と締め切りから今日までの残り日数を掛け合わせたものから，見積もりを引くことで算出しています．この値がマイナスを取る場合は残り時間に対する見積もりが不十分であるということです．余った時間は次のタスクの可否判断に持ち越されます．</p>
+            </section>
+          </div>
+        </div>
+      </div>
+  
+      <footer>
+        <div class=footer>
+          <small>(c) 2021 Takuya Jodai</small>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

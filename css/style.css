@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+body {
+  margin:0;
+  padding:0;
+  font-size: 15px;
+  line-height: 2;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+h1 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+  color: #222222;
+}
+
+h2 {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  color: #222222;
+}
+
+p {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  color: #222222;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #222222;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+footer {
+  margin-top: auto;
+}
+
+.footer {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 15%;
+}
+
+.logo {
+  float: left;
+  margin: 20px 50px 25px 50px;
+  margin-left: 15%;
+}
+
+.global-nav {
+  clear: both;
+  margin-left: 15%;
+  padding-top: 30px;
+}
+
+.global-nav li {
+  float: left;
+  padding-bottom: 11px;
+  font-size: 16px;
+  list-style: none;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  border-radius: 3px 3px 0px 0px;
+}
+
+.global-nav li a {
+  color: #6E7B85;
+  padding: 10px 12px 0px 12px ;
+}
+
+.global-nav li a:hover {
+  border-bottom: 2.5px solid #222222;
+  padding-bottom: 13px;
+  text-decoration: none;
+  font-weight: 700;
+  color: #222222;
+}
+
+.wrap {
+  clear: both;
+}
+
+.content {
+  clear: both;
+  background-color: #EDF2F7;
+}
+
+.main {
+  margin-left: 18%;
+  margin-right: 18%;
+  padding-bottom: 40px;
+  min-height:  65vh;
+}
+
+.main h1 {
+  padding-top: 35px;
+}
+
+.main h2 {
+  padding-top: 20px;
+  font-size: 18px;
+}
+
+.main p {
+  padding-top: 5px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.form {
+  background-color: #FFFFFF;
+  padding: 30px 40px;
+  margin-bottom: 30px;
+  border-radius: 5px;
+}
+
+.form dl dt {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 400;
+  width: 145px;
+  padding: 10px 0;
+  float: left;
+  clear: both;
+}
+
+.form dl dd {
+  padding: 10px 0;
+}
+
+.form h2 {
+  padding-top: 0px;
+}
+
+.form .task {
+  width: 150px;
+  height: 25px;
+}
+
+.form .worktime {
+  width: 150px;
+  height: 25px;
+}
+
+.form .time {
+  width: 150px;
+  height: 25px;
+}
+
+.form .deadline {
+  height: 25px;
+}
+
+.form input {
+  border: 0;
+  border-radius: 0;
+  background-color: #EDF2F7;
+  border-radius: 3px;
+}
+
+.form button {
+  border: 0;
+  border-radius: 0;
+  background-color: #88B9AC;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 700;
+  width: 120px;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  border: 3px solid #88B9AC;
+}
+
+hr {
+  border-style: none;
+  border-top: 1px solid #EDF2F7;
+  margin: 25px 15px;
+}
+
+.btn {
+  display: block;
+  margin: 0 0 0 auto;
+  margin-right: 5%;
+}
+
+.form button:hover {
+  background-color: #FFFFFF;
+  color: #88B9AC;
+  cursor: pointer;
+}
+
+.tasks {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.tasks dl {
+  width: 33%;
+}
+
+.content-top {
+  margin-bottom: 20px;
+}
+
+.task_name {
+  font-weight: 700;
+}
+
+@media screen and (max-width:600px) {
+  /* 画面サイズが600px以下の場合に適用 */
+  body {
+    font-size: 3.5vw;
+  }
+
+  h1 {
+    font-size: 6.5vw;
+  }
+
+  h2 {
+    font-size: 2.6vw;
+  }
+
+  .logo {
+    margin-left: 10%;
+  }
+
+  .global-nav {
+    font-size: 8px;
+    margin-left: 10%;
+  }
+
+  .global-nav li {
+    display: inline;
+    
+  }
+
+  .main {
+    margin-left: 14%;
+    margin-right: 12%;
+    padding-bottom: 40px;
+    min-height:  65vh;
+  }
+
+  .form {
+    padding: 20px 30px;
+    margin-bottom: 20px;
+  }
+
+  .form dl dt {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 400;
+    width: 145px;
+    padding: 10px 0;
+    float: none;
+    clear: both;
+  }
+
+  .tasks {
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+
+  .form dl dd {
+    padding: 4px 0;
+    width:100%; 
+    margin-left: 0px;
+  }
+
+  .form h2 {
+    padding-top: 0px;
+  }
+
+  .form .task {
+    width: 200px;
+    height: 25px;
+  }
+
+  .form .worktime {
+    width: 200px;
+    height: 25px;
+  }
+
+  .form .time {
+    width: 200px;
+    height: 25px;
+  }
+
+  .form .deadline {
+    height: 25px;
+  }
+
+  .btn {
+    display: block;
+    margin: 0 40px 0 30px;
+  }
+
+}
